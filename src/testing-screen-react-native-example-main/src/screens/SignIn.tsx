@@ -74,8 +74,8 @@ const useLoginFormState = ({ navigation }) => {
 export default ({ navigation }) => {
   const { username, password, submit } = useLoginFormState({ navigation });
 
-  let usernameErrorMsg;
-  let passwordErrorMsg;
+  let usernameErrorMsg: string;
+  let passwordErrorMsg: string;
 
   if (submit.value && !username.valid) {
     usernameErrorMsg = "Invalid username.";
