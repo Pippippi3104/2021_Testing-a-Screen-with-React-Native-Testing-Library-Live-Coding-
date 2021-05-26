@@ -25,20 +25,29 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@babel/preset-typescript": "^7.13.0",
     "@testing-library/jest-native": "^3.4.3",
     "@testing-library/react-native": "^7.1.0",
     "@types/jest": "^26.0.23",
+    "@types/mocha": "^8.2.2",
     "@types/react": "^17.0.8",
     "@types/react-native": "^0.64.6",
     "eslint": "^7.20.0",
     "eslint-config-handlebarlabs": "^0.0.6",
+    "eslint-import-resolver-webpack": "^0.13.1",
     "expo-cli": "^4.4.9",
     "jest-expo": "^40.0.2",
-    "jest-fetch-mock": "^3.0.3"
+    "jest-fetch-mock": "^3.0.3",
+    "ts-jest": "^27.0.0"
   },
   "private": true,
   "jest": {
     "preset": "jest-expo",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
     ],
